@@ -1,0 +1,5 @@
+pip uninstall uv
+Get-Command uv -ErrorAction SilentlyContinue
+Get-ChildItem -Path $env:LOCALAPPDATA\ -Recurse -Filter "uv.exe"
+$env:Path = "C:\Users\Abdullah\AppData\Roaming\Python\Python313\Scripts;$env:Path"
+uv --version
