@@ -10,3 +10,5 @@ uv --version
 uv pip install django-tailwind
 uv pip install 'django-tailwind[reload]'
 python -m pip install --upgrade pip
+pip install django-tailwind
+pip install 'django-tailwind[reload]'
