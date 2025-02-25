@@ -13,3 +13,6 @@ python -m pip install --upgrade pip
 pip install django-tailwind
 pip install 'django-tailwind[reload]'
 python manage.py tailwind init
+
+setting .py ma add karo
+NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd"
