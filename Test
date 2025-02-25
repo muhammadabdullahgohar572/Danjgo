@@ -5,3 +5,8 @@ $env:Path = "C:\Users\Abdullah\AppData\Roaming\Python\Python313\Scripts;$env:Pat
 uv --version
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
 .venv\Scripts\Activate
+pip install uv
+uv --version
+uv pip install django-tailwind
+uv pip install 'django-tailwind[reload]'
+python -m pip install --upgrade pip
