@@ -11,6 +11,8 @@ TAILWIND_APP_NAME = 'theme'
 INTERNAL_IPS = ['127.0.0.1']
 NPM_BIN_PATH = r'C:\Program Files\nodejs\npm.cmd'
 "django_browser_reload.middleware.BrowserReloadMiddleware",
+
+----------------------urls.py-------------------------------- 
   path("__reload__/", include("django_browser_reload.urls")),
 
 python manage.py tailwind start
