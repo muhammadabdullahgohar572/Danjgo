@@ -11,4 +11,6 @@ uv venv
 pip uninstall uv
 pip install uv --break-system-packages
 python -m uv venv
-django-admin startproject chaiDjango      
+django-admin startproject chaiDjango   
+cd chaiDjango 
+python manage.py runserver 8001
