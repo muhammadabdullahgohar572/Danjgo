@@ -1,0 +1,14 @@
+ pip install uv 
+pip show uv
+where.exe uv
+python -m uv venv
+where.exe uv
+ls C:\Users\Abdullah\AppData\Roaming\Python\Python313\Scripts | findstr uv
+C:\Users\Abdullah\AppData\Roaming\Python\Python313\Scripts\uv venv
+$env:Path += ";C:\Users\Abdullah\AppData\Roaming\Python\Python313\Scripts"
+uv venv
+[System.Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Users\Abdullah\AppData\Roaming\Python\Python313\Scripts", [System.EnvironmentVariableTarget]::User)
+pip uninstall uv
+pip install uv --break-system-packages
+python -m uv venv
+django-admin startproject chaiDjango      
