@@ -34,6 +34,46 @@ npm -v
 cd theme/static_src
 npm install
 python manage.py tailwind start
+but muje suggestion nehi a rehi han
+
+pher  settings ja kar  Tailwind CSS IntelliSense ma django-html or value ma html type karo
+
+2. VS Code Ki Settings Check Karein
+VS Code ki settings mein jaakar Tailwind CSS IntelliSense enable karein:
+
+VS Code open karein.
+File > Preferences > Settings par jaayein.
+Search bar mein tailwind likhein.
+Editor: Quick Suggestions ko Always On karein.
+Agar phir bhi kaam nahi kar raha, toh manually settings.json file mein add karein:
+
+json
+Copy code
+{
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "django-html": "html"
+  }
+}
+3. Tailwind Ko Manually Enable Karein
+Agar Django templates mein suggestions nahi mil rahi, toh settings.json mein yeh bhi add karein:
+
+json
+Copy code
+{
+  "tailwindCSS.experimental.classRegex": [
+    ["{%\\s*class=['\"]([^'\"]*)['\"]\\s*%}", "class"]
+  ]
+}
+4. VS Code Ko Restart Karein
+Agar aapne settings update ki hain, toh VS Code close karke dubara open karein.
+
+Phir Django HTML file ya base.html file open karein aur class="" likhna start karein. Tailwind ki suggestions aani shuru ho jayein gi.
+
+Agar phir bhi masla ho, toh mujhe batao! 🚀
 
 
 
