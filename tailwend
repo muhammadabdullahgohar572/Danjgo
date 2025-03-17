@@ -21,8 +21,57 @@ NPM_BIN_PATH = r'C:\Program Files\nodejs\npm.cmd'
 
 
 -----------------------------------------
+
+
+
+
+
+
+
+-------------new---------------------------
+python -m ensurepip --default-pip
+pip install "django-tailwind[reload]"
+
+then add setting.py ma   INSTALLED_APPS ma tailwind add karo 
+'tailwind'
+cd kar kaye app ma jao
+
+python manage.py tailwind init
+
+
+then add setting.py ma   INSTALLED_APPS ma theme add karo 
+'theme'
+
+pher setting.py ma add karo
+TAILWIND_APP_NAME = 'theme'
+INTERNAL_IPS = ['127.0.0.1']
+NPM_BIN_PATH = r'C:\Program Files\nodejs\npm.cmd'
+
+then add setting.py ma   INSTALLED_APPS ma django_browser_reload add karo 
+
+django_browser_reload
+
+
+pher setteing.py ma middleware ma add karo
+"django_browser_reload.middleware.BrowserReloadMiddleware",
+
+----------------------urls.py-----------------------------------------------
+  path("__reload__/", include("django_browser_reload.urls")),
+
+
+add  
+html file  
+
+
+{% load static tailwind_tags %}
+{% tailwind_css %}
+
 python manage.py tailwind start
 python manage.py tailwind build
+
+
+-----------------------------------error----------------------------------------
+
 
 error 
 
@@ -86,40 +135,6 @@ html file
 {% load static tailwind_tags %}
 {% tailwind_css %}
 
-
-
-
-
-
--------------new---------------------------
-python -m ensurepip --default-pip
-pip install "django-tailwind[reload]"
-
-then add setting.py ma   INSTALLED_APPS ma tailwind add karo 
-'tailwind'
-cd kar kaye app ma jao
-
-python manage.py tailwind init
-
-
-then add setting.py ma   INSTALLED_APPS ma theme add karo 
-'theme'
-
-pher setting.py ma add karo
-TAILWIND_APP_NAME = 'theme'
-INTERNAL_IPS = ['127.0.0.1']
-NPM_BIN_PATH = r'C:\Program Files\nodejs\npm.cmd'
-
-then add setting.py ma   INSTALLED_APPS ma django_browser_reload add karo 
-
-django_browser_reload
-
-
-pher setteing.py ma middleware ma add karo
-"django_browser_reload.middleware.BrowserReloadMiddleware",
-
-----------------------urls.py-----------------------------------------------
-  path("__reload__/", include("django_browser_reload.urls")),
 
 
 
