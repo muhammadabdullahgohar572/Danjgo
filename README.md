@@ -1,1 +1,1 @@
-# Danjgo course
+# Danjgo Full course
