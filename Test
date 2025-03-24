@@ -17,6 +17,7 @@ python manage.py tailwind start
 
 setting .py ma add karo
 NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd"
+---------------------------------------------------------
 "django_browser_reload.middleware.BrowserReloadMiddleware",
 
 
