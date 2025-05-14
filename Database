@@ -2,7 +2,7 @@ python manage.py makemigrations chai
 python manage.py migrate
 
 
----------setting.py file code ----------------------------
+---------setting.py file code --------------------
 
 MEDIA_URL = '/media/'
 
